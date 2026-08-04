@@ -46,6 +46,9 @@ function GetElements(arr,n) {
 let SimpleArr = ['apple', 'banana', 'cherry', 'date', 'elderberry'];
 console.log(GetElements(SimpleArr,4));
 */
+
+//Write a JavaScript code that converts the first letter of each word of the string to upper case.
+
 /*
 function UpperCase(str){
   return str
@@ -58,10 +61,14 @@ let converter = UpperCase(text);
 console.log(converter)
 */
 
+//return only the non-repeated characters from a string
+
 /*
 const removeDuplicates = (str) => [...new Set(str)].join('');
 console.log(removeDuplicates("banana")); 
 */
+
+//return the longest word in a sentence
 /*
 let sentence = "my name is ammar"
 let worlds = sentence.split(' ')
@@ -76,3 +83,14 @@ let biggestOne = worlds.reduce((previous, current) => {
 console.log(biggestOne);
 */
 
+//with a nested loop write the multiplication table for numbers from 1 to 10
+
+for (let i = 1; i <= 10; i++) {
+    
+    for (let j = 1; j <= 10; j++) {
+        let result = i * j;
+        console.log(`${i} x ${j} = ${result}`);
+    }
+    
+    console.log(""); 
+}
