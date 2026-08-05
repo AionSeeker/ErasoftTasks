@@ -13,6 +13,10 @@ arr.forEach(num =>{
 
 //Write a program that take 3 integers from user then print the max element and the min element
 /*
+const readline = require("readline").createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
 readline.question("Enter the first num: ", (input1) => {
   readline.question("Enter the second num: ", (input2) => {
     readline.question("Enter the third num: ", (input3) => {
@@ -84,7 +88,7 @@ console.log(biggestOne);
 */
 
 //with a nested loop write the multiplication table for numbers from 1 to 10
-
+/*
 for (let i = 1; i <= 10; i++) {
     
     for (let j = 1; j <= 10; j++) {
@@ -94,3 +98,4 @@ for (let i = 1; i <= 10; i++) {
     
     console.log(""); 
 }
+*/
