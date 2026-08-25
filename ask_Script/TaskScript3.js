@@ -1,3 +1,4 @@
+//this is a class 
 class Shape {
   constructor(_color, _fontWeight) {
     this.color = _color
@@ -20,8 +21,8 @@ class Rectangel extends Shape {
     this.Height = _Height
   }
   PrintArea() {
-    let areaOfRectangle = this.Width * this.Height
-    console.log(`The Area is ${areaOfRectangle}cm other info color: ${this.color} fontWeight: ${this.fontWeight}`)
+    let areaOfRectangle = this.width * this.height
+    console.log(`The Area of the rectangle is ${areaOfRectangle}cm the color: ${this.color} the fontWeight is: ${this.fontWeight}`)
   }
 }
 
@@ -33,13 +34,15 @@ class circle extends Shape {
   PrintCircelData() {
     const pi = 3.14159265359;
     let circleArea = this.radus * 2 * pi
-    console.log(`The Area is ${circleArea}cm other info color: ${this.color} fontWeight: ${this.fontWeight}`)
+    console.log(`The Area of the circle is ${circleArea}cm the color is: ${this.color} the fontWeight is: ${this.fontWeight}`)
   }
 }
 
 let newShape = new Shape("black", "15px")
-//console.log(newShape.ColorAndWeight())
-
+let newRectangel = new Rectangel("black", 15, 20, 8)
 let newCircle = new circle("black", "15px", 17)
-console.log(newCircle.PrintCircelData())
+// newShape.ColorAndWeight()
+// newCircle.PrintCircelData()
+// newRectangel.PrintArea()
+console.log(Object.getPrototypeOf(newRectangel))
 
