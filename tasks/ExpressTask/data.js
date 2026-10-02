@@ -1,7 +1,7 @@
 //those are the DataBases
 //you may see short names bec i will store data manually usually the first litter with the last one without including any extras like s in products,
 //the shortcut name will be capital for example productsName will be PTname
-//if you didn't see any kind of that shit that's fine just in case you did  
+//if you didn't see any kind of that that's fine just in case you did  
 
 // quantity is the available stock; price is the price of one unit.
 let products = [
