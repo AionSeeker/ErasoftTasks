@@ -6,7 +6,8 @@ class Product {
     this.productsQuantity = _productsQuantity
   }
 }
-
+let paymentSuccessful;// for boolen vlaue
+let compleatPurchase; // for boolen value
 class User {
   constructor(_userName, _email, _password) {
     this.userName = _userName
@@ -20,8 +21,12 @@ class User {
   removeProductFromCart(product) {
     this.shoppingCart.removeProduct(product)
   }
-  compleatPurchase() {
-
+  CompleatPurchase() {
+    if (paymentSuccessful == true) {
+      compleatPurchase = true;
+    } else {
+      compleatPurchase = false;
+    }
   }
 
 }
@@ -34,9 +39,11 @@ class payment {
   }
   PaymentCheck() {
     if (this.paymentCardNumber.length === 16 && this.paymentCardCvv.length === 3) {
-      console.log("payment done")
+      console.log("payment successful")
+      paymentSuccessful = true;
     } else {
-      console.log("Enter valide payment Card")
+      console.log("Enter valide payment card")
+      paymentSuccessful = false;
     }
   }
 }
